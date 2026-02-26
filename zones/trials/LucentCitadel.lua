@@ -133,16 +133,17 @@ end
 local function EnableMirrorIcons()
     if (Crutch.savedOptions.lucentcitadel.showOrphicIcons) then
         if (Crutch.savedOptions.lucentcitadel.orphicIconsNumbers) then
+            local prefix = Crutch.savedOptions.lucentcitadel.flipOrphicNumbers and "OrphicNumFlip" or "OrphicNum"
             if (GetCurrentZoneDungeonDifficulty() == DUNGEON_DIFFICULTY_VETERAN) then
-                Crutch.EnableIcon("OrphicNum1")
-                Crutch.EnableIcon("OrphicNum3")
-                Crutch.EnableIcon("OrphicNum5")
-                Crutch.EnableIcon("OrphicNum7")
+                Crutch.EnableIcon(prefix .. "1")
+                Crutch.EnableIcon(prefix .. "3")
+                Crutch.EnableIcon(prefix .. "5")
+                Crutch.EnableIcon(prefix .. "7")
             end
-            Crutch.EnableIcon("OrphicNum2")
-            Crutch.EnableIcon("OrphicNum4")
-            Crutch.EnableIcon("OrphicNum6")
-            Crutch.EnableIcon("OrphicNum8")
+            Crutch.EnableIcon(prefix .. "2")
+            Crutch.EnableIcon(prefix .. "4")
+            Crutch.EnableIcon(prefix .. "6")
+            Crutch.EnableIcon(prefix .. "8")
         else
             if (GetCurrentZoneDungeonDifficulty() == DUNGEON_DIFFICULTY_VETERAN) then
                 Crutch.EnableIconGroup("OrphicDirectionsVet")
@@ -163,6 +164,14 @@ local function DisableMirrorIcons()
     Crutch.DisableIcon("OrphicNum6")
     Crutch.DisableIcon("OrphicNum7")
     Crutch.DisableIcon("OrphicNum8")
+    Crutch.DisableIcon("OrphicNumFlip1")
+    Crutch.DisableIcon("OrphicNumFlip2")
+    Crutch.DisableIcon("OrphicNumFlip3")
+    Crutch.DisableIcon("OrphicNumFlip4")
+    Crutch.DisableIcon("OrphicNumFlip5")
+    Crutch.DisableIcon("OrphicNumFlip6")
+    Crutch.DisableIcon("OrphicNumFlip7")
+    Crutch.DisableIcon("OrphicNumFlip8")
     Crutch.DisableIconGroup("OrphicDirections")
     Crutch.DisableIconGroup("OrphicDirectionsVet")
 end

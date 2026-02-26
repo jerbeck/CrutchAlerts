@@ -130,6 +130,15 @@ local data = {
     ["OrphicNum6"] = {x = 147477, y = 22869, z = 89756, texture = "CrutchAlerts/assets/shape/diamond_red_6.dds", size = GetOrphicNumIconSize},
     ["OrphicNum7"] = {x = 146628, y = 22867, z = 87851, texture = "CrutchAlerts/assets/shape/diamond_red_7.dds", size = GetOrphicNumIconSize},
     ["OrphicNum8"] = {x = 147488, y = 22868, z = 86178, texture = "CrutchAlerts/assets/shape/diamond_red_8.dds", size = GetOrphicNumIconSize},
+    -- Flipped: 1 starts at South, clockwise (S=1, SW=2, W=3, NW=4, N=5, NE=6, E=7, SE=8)
+    ["OrphicNumFlip1"] = {x = 149348, y = 22867, z = 85334, texture = "CrutchAlerts/assets/shape/diamond_red_5.dds", size = GetOrphicNumIconSize},
+    ["OrphicNumFlip2"] = {x = 151041, y = 22864, z = 86169, texture = "CrutchAlerts/assets/shape/diamond_red_6.dds", size = GetOrphicNumIconSize},
+    ["OrphicNumFlip3"] = {x = 151956, y = 22867, z = 87950, texture = "CrutchAlerts/assets/shape/diamond_red_7.dds", size = GetOrphicNumIconSize},
+    ["OrphicNumFlip4"] = {x = 151169, y = 22864, z = 89708, texture = "CrutchAlerts/assets/shape/diamond_red_8.dds", size = GetOrphicNumIconSize},
+    ["OrphicNumFlip5"] = {x = 149272, y = 22868, z = 90657, texture = "CrutchAlerts/assets/shape/diamond_red_1.dds", size = GetOrphicNumIconSize},
+    ["OrphicNumFlip6"] = {x = 147477, y = 22869, z = 89756, texture = "CrutchAlerts/assets/shape/diamond_red_2.dds", size = GetOrphicNumIconSize},
+    ["OrphicNumFlip7"] = {x = 146628, y = 22867, z = 87851, texture = "CrutchAlerts/assets/shape/diamond_red_3.dds", size = GetOrphicNumIconSize},
+    ["OrphicNumFlip8"] = {x = 147488, y = 22868, z = 86178, texture = "CrutchAlerts/assets/shape/diamond_red_4.dds", size = GetOrphicNumIconSize},
 
     -- Xoryn
     ["TempestH1"] = {x = 137157, y = 34975, z = 163631, texture = "CrutchAlerts/assets/shape/diamond_orange_1.dds", size = GetTempestIconsSize},

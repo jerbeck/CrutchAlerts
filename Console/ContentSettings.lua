@@ -347,6 +347,19 @@ function Crutch.CreateConsoleContentSettingsMenu()
     })
 
     settings:AddSetting({
+        type = LibHarvensAddonSettings.ST_CHECKBOX,
+        label = "Flip Orphic Numbers",
+        tooltip = "When using numbered icons, places 1 at the South position and counts clockwise (S=1, SW=2, W=3, NW=4, N=5, NE=6, E=7, SE=8)",
+        default = false,
+        getFunction = function() return Crutch.savedOptions.lucentcitadel.flipOrphicNumbers end,
+        setFunction = function(value)
+            Crutch.savedOptions.lucentcitadel.flipOrphicNumbers = value
+            Crutch.OnPlayerActivated()
+        end,
+        disable = function() return not Crutch.savedOptions.lucentcitadel.showOrphicIcons or not Crutch.savedOptions.lucentcitadel.orphicIconsNumbers end,
+    })
+
+    settings:AddSetting({
         type = LibHarvensAddonSettings.ST_SLIDER,
         label = "Orphic icons size",
         min = 20,

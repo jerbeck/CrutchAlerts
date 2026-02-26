@@ -1585,6 +1585,19 @@ function Crutch:CreateSettingsMenu()
                     disabled = function() return not Crutch.savedOptions.lucentcitadel.showOrphicIcons end,
                 },
                 {
+                    type = "checkbox",
+                    name = "    Flip Orphic Numbers",
+                    tooltip = "When using numbered icons, places 1 at the South position and counts clockwise (S=1, SW=2, W=3, NW=4, N=5, NE=6, E=7, SE=8)",
+                    default = false,
+                    getFunc = function() return Crutch.savedOptions.lucentcitadel.flipOrphicNumbers end,
+                    setFunc = function(value)
+                        Crutch.savedOptions.lucentcitadel.flipOrphicNumbers = value
+                        Crutch.OnPlayerActivated()
+                    end,
+                    width = "full",
+                    disabled = function() return not Crutch.savedOptions.lucentcitadel.showOrphicIcons or not Crutch.savedOptions.lucentcitadel.orphicIconsNumbers end,
+                },
+                {
                     type = "slider",
                     name = "    Orphic icons size",
                     tooltip = "The size of the mirror icons",

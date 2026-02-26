@@ -189,6 +189,7 @@ local defaultOptions = {
         cavotIconSize = 100,
         showOrphicIcons = true,
         orphicIconsNumbers = false,
+        flipOrphicNumbers = false,
         orphicIconSize = 150,
         showWeakeningCharge = "TANK", -- "NEVER", "TANK", "ALWAYS"
         showTempestIcons = true,
